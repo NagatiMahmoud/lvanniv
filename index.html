@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy 29th Birthday, My Love ❤️</title>
+    <meta
+      name="description"
+      content="A romantic birthday surprise page with heartfelt apology and wishes."
+    />
+    <meta property="og:title" content="Happy 29th Birthday, My Love ❤️" />
+    <meta
+      property="og:description"
+      content="Today is your special day, and I couldn't let it pass without telling you how much you mean to me."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/social-preview.svg" />
+    <meta name="theme-color" content="#f7d8ff" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-live="polite">
+      <div class="loader-heart">❤</div>
+      <p>Preparing your surprise...</p>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <div class="sky" aria-hidden="true">
+      <div class="moon"></div>
+      <div class="cloud cloud-one"></div>
+      <div class="cloud cloud-two"></div>
+      <div class="stars" id="stars"></div>
+      <div class="particles" id="particles"></div>
+      <div class="floating-elements" id="floatingElements"></div>
+    </div>
+
+    <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+    <header class="top-controls">
+      <button id="themeToggle" class="chip-btn" aria-label="Toggle dark light mode">
+        🌙
+      </button>
+      <button id="musicToggle" class="chip-btn" aria-label="Play or pause music">
+        🎵
+      </button>
+    </header>
+
+    <audio id="bgMusic" loop preload="none">
+      <source src="assets/romantic-ambient-placeholder.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main>
+      <section class="hero section reveal" id="hero">
+        <h1>Happy 29th Birthday, My Love ❤️</h1>
+        <p id="typingText" class="typing"></p>
+        <p class="hero-subtitle">
+          Today is your special day, and I couldn't let it pass without telling you how much
+          you mean to me.
+        </p>
+        <a href="#apology" id="openHeart" class="glow-btn">Open My Heart</a>
+      </section>
+
+      <section class="section reveal hidden-letter" id="apology">
+        <h2>My Apology</h2>
+        <article class="glass-card letter-card" id="letterCard" aria-hidden="true">
+          <p>I know we've had a difficult moment.</p>
+          <p>I'm truly sorry.</p>
+          <p>I miss talking with you.</p>
+          <p>You deserve happiness today.</p>
+          <p>I hope we can smile together again.</p>
+        </article>
+      </section>
+
+      <section class="section reveal" id="wishes">
+        <h2>Birthday Wishes</h2>
+        <div class="wish-grid">
+          <article class="glass-card wish-card">May your year bloom with joy and gentle peace.</article>
+          <article class="glass-card wish-card">May every dream in your heart find its moment to shine.</article>
+          <article class="glass-card wish-card">May laughter, love, and warmth follow you every day.</article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="reasons">
+        <h2>10 Reasons I Love You</h2>
+        <div class="reasons-grid">
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">1</div><div class="flip-back">Your smile</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">2</div><div class="flip-back">Your kindness</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">3</div><div class="flip-back">Your patience</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">4</div><div class="flip-back">Your heart</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">5</div><div class="flip-back">Your laugh</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">6</div><div class="flip-back">Your strength</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">7</div><div class="flip-back">Your honesty</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">8</div><div class="flip-back">Your warmth</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">9</div><div class="flip-back">Your intelligence</div></div></article>
+          <article class="flip-card"><div class="flip-inner"><div class="flip-front">10</div><div class="flip-back">The way you love</div></div></article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="timeline">
+        <h2>Our Memories Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-item glass-card"><h3>First Hello</h3><p>[Edit this memory]</p></div>
+          <div class="timeline-item glass-card"><h3>First Laugh Together</h3><p>[Edit this memory]</p></div>
+          <div class="timeline-item glass-card"><h3>Special Day Out</h3><p>[Edit this memory]</p></div>
+          <div class="timeline-item glass-card"><h3>Favorite Moment</h3><p>[Edit this memory]</p></div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="surprise">
+        <h2>Surprise</h2>
+        <button class="gift-box" id="giftBox" aria-label="Open gift box">
+          <span class="lid"></span>
+          <span class="box"></span>
+          <span class="ribbon"></span>
+        </button>
+        <p id="giftMessage" class="gift-message" aria-live="polite">
+          You are the most beautiful gift life has ever given me.
+        </p>
+      </section>
+
+      <section class="section reveal" id="final-message">
+        <h2>Final Message</h2>
+        <blockquote class="glass-card final-quote">
+          No matter what happened between us,<br />
+          my wish today is simply to see you smile.<br /><br />
+          Happy Birthday.<br />
+          I miss you.<br />
+          I love you.
+          <footer>— Mahmoud ❤️</footer>
+        </blockquote>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
